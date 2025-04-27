@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-[#120043] to-[#450073] min-h-screen flex flex-col justify-between p-4">
+
+  <div class="grid grid-cols-2 gap-4 mt-8">
+    <!-- Option 1 -->
+    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+      <img src="img/abd.png" alt="Player 1" class="w-full h-full object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+        Rachel Heyhoe-Flint
+      </div>
+      <div class="absolute top-2 left-2 text-white text-lg font-bold">01.</div>
+    </div>
+
+    <!-- Option 2 (Selected) -->
+    <div class="relative rounded-xl overflow-hidden border-4 border-green-400">
+      <img src="img/tendulkar.jpg" alt="Player 2" class="w-full h-full object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+        Shantha Rangaswamy
+      </div>
+      <div class="absolute top-2 left-2 text-white text-lg font-bold">02.</div>
+      <div class="absolute top-2 right-2 bg-green-400 rounded-full p-1">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+      <img src="img/brian-lara.jpg" alt="Player 3" class="w-full h-full object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+        Player Name 3
+      </div>
+      <div class="absolute top-2 left-2 text-white text-lg font-bold">03.</div>
+    </div>
+
+    <!-- Option 4 -->
+    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+      <img src="img/tendulkar.jpg" alt="Player 4" class="w-full h-full object-cover">
+      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+        Player Name 4
+      </div>
+      <div class="absolute top-2 left-2 text-white text-lg font-bold">04.</div>
+    </div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="flex justify-between gap-4 mt-8">
+    <button class="flex-1 bg-transparent border border-pink-500 text-pink-500 py-3 rounded-full font-bold text-lg">Skip</button>
+    <button class="flex-1 bg-pink-500 text-white py-3 rounded-full font-bold text-lg">Next</button>
+  </div>
+
+</body>
+</html>
