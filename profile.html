@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen text-white bg-cover bg-center bg-no-repeat" style="background-image: url('img/blur.png');">
+
+  <!-- Header -->
+  <div class="relative w-full max-w-md mx-auto pt-6 pb-4 px-4">
+    <!-- Back arrow -->
+    <div class="absolute left-4 top-6">
+      <button class="text-white text-2xl">&#8592;</button>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-center text-lg font-semibold">Profile</h1>
+
+    <!-- Mini profile image icon -->
+    <div class="absolute right-4 top-4 w-10 h-10 rounded-full border-2 border-white overflow-hidden">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mini Profile" class="w-full h-full object-cover">
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="w-full max-w-md mx-auto px-4">
+    <!-- Profile Picture -->
+    <div class="flex flex-col items-center mt-2">
+      <div class="w-28 h-28 rounded-full overflow-hidden">
+        <img src="img/profile.png" alt="Profile" class="w-full h-full object-cover">
+      </div>
+      <h2 class="mt-4 text-xl font-semibold">Sakibur Rahman</h2>
+      <button class="text-pink-400 font-medium mt-1" onclick="window.location.href='edit-profile.html'">Edit Profile</button>
+    </div>
+
+    <!-- Score Section -->
+    <div class="mt-6 bg-gray-900 rounded-xl p-4 text-center shadow-lg">
+      <p class="text-sm text-gray-400">Points scored</p>
+      <p class="text-3xl font-bold text-white">854</p>
+    </div>
+
+    <!-- Terms -->
+    <div class="text-center mt-2">
+      <a href="#" class="text-pink-400 font-semibold text-sm">Terms & Conditions</a>
+    </div>
+
+    <!-- Score History -->
+    <div class="mt-6">
+      <h3 class="text-lg font-semibold mb-2">Score History</h3>
+      <div class="bg-gradient-to-br from-red-800 to-green-600 rounded-2xl p-4 shadow-inner ring-1 ring-gray-700/50 space-y-4">
+        <div class="flex justify-between border-b border-gray-700 pb-2">
+          <span>01.</span><span>9/29/2024</span><span>500 point</span>
+        </div>
+        <div class="flex justify-between border-b border-gray-700 pb-2">
+          <span>02.</span><span>9/29/2024</span><span>500 point</span>
+        </div>
+        <div class="flex justify-between">
+          <span>03.</span><span>9/29/2024</span><span>500 point</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

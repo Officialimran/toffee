@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Question</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-[#0f0220] to-[#23044d] min-h-screen flex flex-col items-center p-4 text-white">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between w-full max-w-md mb-6">
+    <div class="flex items-center gap-2 text-xs text-pink-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      00:15
+    </div>
+    <div class="flex items-center gap-2 text-xs">
+      <div class="flex items-center gap-1 bg-[#1c1042] px-2 py-1 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        </svg>
+        <span class="text-yellow-400 font-semibold">650 point</span>
+      </div>
+      <img src="img/success.png" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="relative w-full max-w-md mb-8">
+    <div class="flex justify-between items-center mb-2">
+      <span class="text-pink-400 text-xs font-semibold">Question</span>
+      <span class="text-pink-400 text-xs font-semibold">Category: <span class="text-pink-400">Cricket</span></span>
+    </div>
+    <div class="h-1 w-full bg-gray-600 rounded-full">
+      <div class="h-1 w-1/5 bg-pink-400 rounded-full"></div>
+    </div>
+  </div>
+
+  <!-- Question -->
+  <div class="w-full max-w-md text-left mb-6">
+    <h1 class="text-lg font-bold leading-snug mb-2">
+      Who has the highest individual score<br>in Test cricket?
+    </h1>
+    <p class="text-pink-400 text-sm font-semibold mt-4">Select answer</p>
+  </div>
+
+  <!-- Options -->
+  <div class="grid grid-cols-2 gap-4 w-full max-w-md mb-8">
+
+    <!-- Option 1 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center relative hover:bg-[#3d2567] transition">
+      <span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">01.</span>
+      <img src="img/brian-lara.jpg" alt="Option 1" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover">
+    </button>
+
+    <!-- Option 2 (Correct Answer) -->
+    <button class="relative bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center border-2 border-green-400 hover:bg-[#3d2567] transition">
+      
+      <div class="absolute top-2 right-2 w-5 h-5 bg-green-400 rounded-full flex items-center justify-center text-xs font-bold text-black">✔</div>
+      <img src="img/tendulkar.jpg" alt="Option 2" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover">
+    </button>
+
+    <!-- Option 3 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center relative hover:bg-[#3d2567] transition">
+      <span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">03.</span>
+      <img src="img/abd.png" alt="Option 3" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover">
+    </button>
+
+    <!-- Option 4 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center relative hover:bg-[#3d2567] transition">
+      <span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">04.</span>
+      <img src="img/virat.jpg" alt="Option 4" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover">
+    </button>
+
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="flex w-full max-w-md gap-4 mb-6">
+    <button class="w-1/2 border-2 border-pink-500 text-pink-400 py-3 rounded-full text-sm font-semibold hover:bg-pink-500 hover:text-white transition" onclick="window.location.href='index.html'">
+      Skip
+    </button>
+    <button class="w-1/2 bg-pink-500 py-3 rounded-full text-sm font-semibold hover:bg-pink-600 transition" onclick="window.location.href='Leaderboard.html'">
+      Next
+    </button>
+  </div>
+
+  <!-- Switch Category -->
+  <div class="text-center">
+    <a href="#" class="text-pink-400 text-sm underline font-semibold">Switch Category to Movies</a>
+  </div>
+
+</body>
+</html>

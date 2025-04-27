@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen text-white bg-cover bg-center bg-no-repeat" style="background-image: url('img/blur.png');">
+
+  <!-- Header -->
+  <div class="relative w-full max-w-md mx-auto pt-6 pb-4 px-4">
+    <div class="absolute left-4 top-6">
+      <button class="text-white text-2xl" onclick="window.location.href='dashbord.html'">&#8592;</button>
+    </div>
+    <h1 class="text-center text-lg font-semibold">Edit Profile</h1>
+    <div class="absolute right-4 top-4 w-10 h-10 rounded-full border-2 border-white overflow-hidden">
+      <img src="img/success.png" alt="Mini Profile" class="w-full h-full object-cover">
+    </div>
+  </div>
+
+  <!-- Profile image with edit icon -->
+  <div class="relative flex flex-col items-center mt-6">
+    <!-- Decorative profile background shape -->
+    <div class="w-36 h-36 bg-[url('https://www.svgrepo.com/show/357925/cloud.svg')] bg-cover bg-center rounded-full opacity-20 blur-sm absolute z-0"></div>
+
+    <!-- Profile image -->
+    <div class="relative w-28 h-28 rounded-full overflow-hidden z-10">
+      <img src="img/profile.png" alt="Profile Picture" class="w-full h-full object-cover">
+      <!-- Edit pencil icon -->
+      <div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-pink-500 flex items-center justify-center shadow-md border-2 border-white z-20">
+        <!-- Pencil SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15.232 5.232l3.536 3.536M9 11l6-6m-6 6v6h6" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input field -->
+  <div class="w-full max-w-md mx-auto px-6 mt-8">
+    <label class="block text-sm text-gray-300 mb-1">User Name</label>
+    <input type="text" value="Sakibur Rahman" class="w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-pink-400 text-white text-lg pb-2 placeholder-gray-400" />
+  </div>
+
+  <!-- Buttons -->
+  <div class="w-full max-w-md mx-auto flex justify-between mt-12 px-6">
+    <button class="w-[48%] py-3 rounded-xl border border-white text-white font-semibold hover:bg-white hover:text-purple-900 transition" onclick="window.location.href='dashbord.html'">
+      Cancel
+    </button>
+    <button class="w-[48%] py-3 rounded-xl bg-pink-500 text-white font-semibold hover:bg-pink-600 transition" onclick="window.location.href='dashbord.html'">
+      Save changes
+    </button>
+  </div>
+
+</body>
+</html>
+

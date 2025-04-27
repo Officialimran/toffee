@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Username</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 bg-cover bg-center bg-no-repeat bg-blend-overlay bg-gradient-to-b from-[#0f1123]/90 to-[#1b1d42]/90" style="background-image: url('img/blur.png');">
+
+  <div class="w-full max-w-sm text-white">
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-10">
+      <span class="text-pink-500">Welcome!</span>
+      <span>Please</span> <br />
+      <span>Create Your</span> <br />
+      <span>Username to Start!</span>
+    </h1>
+
+    <div class="">
+        <!-- Username Label -->
+        <label for="username" class="block text-sm text-gray-300 mb-1">User Name</label>
+
+        <!-- Input -->
+        <input type="text" id="username" placeholder="Type your username here..." 
+        class="w-full bg-transparent border-b border-gray-500 text-white placeholder-gray-400 py-2 mb-6 focus:outline-none" />
+
+        <!-- Checkbox -->
+        <label class="flex items-center space-x-2 mb-10">
+            <input type="checkbox" checked class="accent-pink-500 w-4 h-4 rounded-full" />
+            <span class="text-sm text-white">
+            I agree to the <a href="terms-condition.html" class="text-pink-500 underline">Terms & Conditions</a>
+            </span>
+        </label>
+    </div>
+
+    <!-- Get Started Button -->
+    <div class="flex justify-center mt-10">
+        <button class="flex items-center space-x-4" onclick="window.location.href='dashbord.html'">
+          <span class="text-pink-500 text-xl font-semibold">Get Started</span>
+          <div class="w-14 h-14 rounded-full bg-pink-500 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </button>
+      </div>
+  </div>
+
+</body>
+</html>

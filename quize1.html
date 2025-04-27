@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-[#0f0220] to-[#23044d] min-h-screen text-white flex flex-col items-center p-4">
+
+  <!-- Top Bar -->
+  <div class="flex items-center justify-between w-full max-w-md mb-6">
+    <div class="flex items-center gap-2 text-xs text-pink-400">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      00:15
+    </div>
+    <div class="flex items-center gap-2 text-xs">
+      <span class="text-yellow-400 font-semibold">650 point</span>
+      <img src="img/success.png" alt="User" class="w-8 h-8 rounded-full border-2 border-white">
+    </div>
+  </div>
+
+  <!-- Progress Indicator -->
+  <div class="flex gap-2 mb-8">
+    <div class="w-8 h-1 rounded-full bg-pink-500"></div>
+    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+  </div>
+
+  <!-- Question Section -->
+  <div class="w-full max-w-md mb-6 text-left">
+    <div class="flex justify-between items-center text-xs text-pink-400 mb-2">
+      <span>Question 5</span>
+      <span>Category: Cricket</span>
+    </div>
+    <h1 class="text-lg font-bold leading-snug">
+      Who has the highest individual score<br> in Test cricket?
+    </h1>
+  </div>
+
+  <!-- Options -->
+  <div class="grid grid-cols-2 gap-4 w-full max-w-md mb-6">
+
+    <!-- Option 1 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center">
+      <span class="absolute top-2 left-2 bg-black/50 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">02.</span>
+      <img src="img/brian-lara.jpg" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover" alt="Option 1">
+    </button>
+
+    <!-- Option 2 (Wrong Answer) -->
+    <button class="relative bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center border-2 border-red-500">
+      <div class="absolute top-2 right-2 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-xs font-bold">×</div>
+      <img src="img/tendulkar.jpg" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover" alt="Option 2">
+    </button>
+
+    <!-- Option 3 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center">
+      <img src="img/abd.png" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover" alt="Option 3">
+    </button>
+
+    <!-- Option 4 -->
+    <button class="bg-[#2d1950] p-3 rounded-2xl flex flex-col items-center">
+      <img src="img/virat.jpg" class="w-[168px] h-[150px] rounded-xl mb-2 object-cover" alt="Option 4">
+    </button>
+
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="flex w-full max-w-md gap-4 mb-6">
+    <button class="w-1/2 border-2 border-pink-500 text-pink-400 py-3 rounded-full text-sm font-semibold hover:bg-pink-500 hover:text-white transition" onclick="window.location.href='dashbord.html'">
+      Skip
+    </button>
+    <button class="w-1/2 bg-pink-500 py-3 rounded-full text-sm font-semibold hover:bg-pink-600 transition" onclick="window.location.href='quize2.html'">
+      Next
+    </button>
+  </div>
+
+  <!-- Switch Category -->
+  <div class="text-center">
+    <a href="#" class="text-pink-400 text-xs underline">Switch Category to Movies</a>
+  </div>
+
+</body>
+</html>
