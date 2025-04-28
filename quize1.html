@@ -5,114 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quiz Screen</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+ 
 </head>
-<body class="bg-gradient-to-b from-[#0f0220] to-[#23044d] min-h-screen text-white flex flex-col p-4">
+<body class="min-h-screen p-4 bg-cover bg-center bg-no-repeat bg-blend-overlay bg-gradient-to-b from-[#0f1123]/90 to-[#1b1d42]/90" style="background-image: url('img/blur.png');">
 
-  <!-- Top bar -->
-  <div class="flex justify-between items-center mb-6">
-    <div class="flex items-center gap-2 text-sm">
-      <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
-      </svg>
-      <span>00:15</span>
-    </div>
-    <div class="flex items-center gap-1 text-sm rounded-[20px] text-[#FA3282] border border-[#FFFFFF33] p-2">
-      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
-      </svg>
-      <span>650 point</span>
-    </div>
-    <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-pink-400">
-      <a href="index.html"><img src="img/success.png" alt="User" class="w-full h-full object-cover"></a>
-    </div>
-  </div>
-
-  <!-- Progress Indicator -->
-  <div class="flex gap-2 mb-8">
-    <div class="w-8 h-1 rounded-full bg-pink-500"></div>
-    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
-    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
-    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
-    <div class="w-8 h-1 rounded-full bg-gray-600"></div>
-  </div>
-
-  <!-- Question Section -->
-  <div class="w-full max-w-md mb-6 text-left">
-    <div class="flex justify-between items-center text-xs text-pink-400 mb-2">
-      <span>Question 5</span>
-      <span>Category: Cricket</span>
-    </div>
-    <h1 class="text-lg font-bold leading-snug">
-      Who has the highest individual score<br> in Test cricket?
-    </h1>
-  </div>
-
-
-
-  <div class="grid grid-cols-2 gap-4 mt-2 w-full max-w-md">
-    <!-- Option 1 -->
-    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
-      <img src="img/abd.png" alt="Player 1" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
-        AB de Villiers
-      </div>
-      <div class="absolute top-2 left-2 text-white text-lg font-bold">01.</div>
-    </div>
-
-    <!-- Option 2 (Selected) -->
-    <div class="relative rounded-xl overflow-hidden border-4 border-green-400">
-      <img src="img/tendulkar.jpg" alt="Player 2" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
-        Sachin Tendulkar
-      </div>
-      <div class="absolute top-2 left-2 text-white text-lg font-bold">02.</div>
-      <div class="absolute top-2 right-2 bg-red-600 font-bold rounded-full p-1">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-       
-      </div>
-    </div>
-
-    <!-- Option 3 -->
-    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
-      <img src="img/brian-lara.jpg" alt="Player 3" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
-        Brian Lara
-      </div>
-      <div class="absolute top-2 left-2 text-white text-lg font-bold">03.</div>
-    </div>
-
-    <!-- Option 4 -->
-    <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
-      <img src="img/virat.jpg" alt="Player 4" class="w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
-        Virat Kohli
-      </div>
-      <div class="absolute top-2 left-2 text-white text-lg font-bold">04.</div>
-    </div>
-  </div>
-
+  <div class="flex items-center justify-center">
+    <div class="max-w-md text-white ">
+      <!-- Top bar -->
+        <div class="flex justify-between items-center mb-6">
+          <div class="flex items-center gap-2 text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>00:15</span>
+          </div>
+          <div class="flex items-center gap-1 text-sm rounded-[20px] text-[#FA3282] border border-[#FFFFFF33] p-2">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
+            </svg>
+            <span>650 point</span>
+          </div>
+          <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-pink-400">
+            <a href="index.html"><img src="img/success.png" alt="User" class="w-full h-full object-cover"></a>
+          </div>
+        </div>
   
-  <!-- Action Buttons -->
-  <div class="flex w-full max-w-md gap-4 mb-6">
-    <button class="w-1/2 border-2 border-pink-500 text-pink-400 py-3 rounded-full text-sm font-semibold hover:bg-pink-500 hover:text-white transition" onclick="window.location.href='dashbord.html'">
-      Skip
-    </button>
-    <button class="w-1/2 bg-pink-500 py-3 rounded-full text-sm font-semibold hover:bg-pink-600 transition" onclick="window.location.href='quize2.html'">
-      Next
-    </button>
-  </div>
-
-  <!-- Switch Category -->
-  <div class="text-center">
-    <a href="#" class="text-pink-400 text-xs underline">Switch Category to Movies</a>
+        <!-- Progress Indicator -->
+        <div class="flex gap-2 mb-8">
+          <div class="w-8 h-1 rounded-full bg-pink-500"></div>
+          <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+          <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+          <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+          <div class="w-8 h-1 rounded-full bg-gray-600"></div>
+        </div>
+  
+        <!-- Question Section -->
+        <div class="w-full max-w-md mb-6 text-left">
+          <div class="flex justify-between items-center text-xs text-pink-400 mb-2">
+            <span>Question 5</span>
+            <span>Category: Cricket</span>
+          </div>
+          <h1 class="text-lg font-bold leading-snug">
+            Who has the highest individual score<br> in Test cricket?
+          </h1>
+        </div>
+  
+  
+  
+        <div class="grid grid-cols-2 gap-4 mt-2 w-full max-w-md">
+          <!-- Option 1 -->
+          <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+            <img src="img/abd.png" alt="Player 1" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+              AB de Villiers
+            </div>
+            <div class="absolute top-2 left-2 text-white text-lg font-bold">01.</div>
+          </div>
+  
+          <!-- Option 2 (Selected) -->
+          <div class="relative rounded-xl overflow-hidden border-4 border-green-400">
+            <img src="img/tendulkar.jpg" alt="Player 2" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+              Sachin Tendulkar
+            </div>
+            <div class="absolute top-2 left-2 text-white text-lg font-bold">02.</div>
+            <div class="absolute top-2 right-2 bg-red-600 font-bold rounded-full p-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            
+            </div>
+          </div>
+  
+          <!-- Option 3 -->
+          <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+            <img src="img/brian-lara.jpg" alt="Player 3" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+              Brian Lara
+            </div>
+            <div class="absolute top-2 left-2 text-white text-lg font-bold">03.</div>
+          </div>
+  
+          <!-- Option 4 -->
+          <div class="relative rounded-xl overflow-hidden border-4 border-transparent">
+            <img src="img/virat.jpg" alt="Player 4" class="w-full h-full object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2 text-sm">
+              Virat Kohli
+            </div>
+            <div class="absolute top-2 left-2 text-white text-lg font-bold">04.</div>
+          </div>
+        </div>
+  
+        
+        <!-- Action Buttons -->
+        <div class="flex w-full max-w-md gap-4 mb-6">
+          <button class="w-1/2 border-2 border-pink-500 text-pink-400 py-3 rounded-full text-sm font-semibold hover:bg-pink-500 hover:text-white transition" onclick="window.location.href='dashbord.html'">
+            Skip
+          </button>
+          <button class="w-1/2 bg-pink-500 py-3 rounded-full text-sm font-semibold hover:bg-pink-600 transition" onclick="window.location.href='quize2.html'">
+            Next
+          </button>
+        </div>
+  
+        <!-- Switch Category -->
+        <div class="text-center">
+          <a href="#" class="text-pink-400 text-xs underline">Switch Category to Movies</a>
+        </div>
+    </div>
   </div>
 
 </body>

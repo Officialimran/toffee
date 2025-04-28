@@ -6,64 +6,68 @@
   <title>Quiz UI</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-purple-800 flex items-center justify-center p-4">
+<body class="min-h-screen bg-cover bg-center bg-no-repeat bg-blend-overlay bg-gradient-to-b from-[#0f1123]/90 to-[#1b1d42]/90" style="background-image: url('img/blur.png');">
 
-  <div class="w-full max-w-md bg-[#1c1c3a] rounded-3xl p-6 text-white shadow-2xl relative">
+  <div class="flex items-center justify-center p-4 ">
+    <div class="w-full max-w-md rounded-3xl p-6 text-white relative">
     
-   <!-- Top bar -->
-  <div class="flex justify-between items-center mb-6">
-    <div class="flex items-center gap-2 text-sm">
-      <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
-        <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" />
-      </svg>
-      <span>00:15</span>
-    </div>
-    <div class="flex items-center gap-1 text-sm rounded-[20px] text-[#FA3282] border border-[#FFFFFF33] p-2">
-      <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
-      </svg>
-      <span>650 point</span>
-    </div>
-    <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-pink-400">
-      <a href="index.html"><img src="img/success.png" alt="User" class="w-full h-full object-cover"></a>
-    </div>
-  </div>
-
-    <!-- Progress bar -->
-    <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
-      <div class="bg-pink-400 h-2.5 rounded-full" style="width: 10%"></div>
-    </div>
-
-    <!-- Question -->
-    <div class="mb-8">
-      <div class="text-sm text-pink-400 font-semibold mb-2">Question 1 &bull; Category: Cricket</div>
-      <h2 class="text-lg font-bold">What is the capital city of Japan known for technology?</h2>
-    </div>
-    
-    <!-- Select Answer Text -->
-    <div class="text-pink-400 font-semibold text-sm mb-2">
-        Select answer
+      <!-- Top bar -->
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex items-center gap-2 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          
+          <span>00:15</span>
+        </div>
+        <div class="flex items-center gap-1 text-sm rounded-[20px] text-[#FA3282] border border-[#FFFFFF33] p-2">
+          <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z" />
+          </svg>
+          <span>650 point</span>
+        </div>
+        <div class="w-8 h-8 rounded-full overflow-hidden border-2 border-pink-400">
+          <a href="index.html"><img src="img/success.png" alt="User" class="w-full h-full object-cover"></a>
+        </div>
       </div>
-      
-    <!-- Options -->
-    <div class="flex flex-col gap-4 mb-8">
-      <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">01. Seoul</button>
-      <button class="w-full text-left bg-white text-black p-4 rounded-xl font-semibold border-2 border-green-400">02. Tokyo</button>
-      <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">03. Beijing</button>
-      <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">04. Bangkok</button>
-    </div>
-
-    <!-- Buttons -->
-    <div class="flex justify-between items-center">
-      <button class="px-6 py-2 rounded-full border border-pink-500 text-pink-400 hover:bg-pink-600 hover:text-white transition" onclick="window.location.href='index.html'">Skip</button>
-      <button class="px-6 py-2 rounded-full bg-pink-500 hover:bg-pink-600 text-white font-semibold transition" onclick="window.location.href='quize1.html'">Next</button>
-    </div>
-
-    <!-- Switch Category -->
-    <div class="mt-6 text-center">
-      <a href="#" class="text-pink-400 underline text-sm">Switch Category to Movies</a>
-    </div>
-
+    
+        <!-- Progress bar -->
+        <div class="w-full bg-gray-700 rounded-full h-2.5 mb-6">
+          <div class="bg-pink-400 h-2.5 rounded-full" style="width: 10%"></div>
+        </div>
+    
+        <!-- Question -->
+        <div class="mb-8">
+          <div class="text-sm text-pink-400 font-semibold mb-2">Question 1 &bull; Category: Cricket</div>
+          <h2 class="text-lg font-bold">What is the capital city of Japan known for technology?</h2>
+        </div>
+        
+        <!-- Select Answer Text -->
+        <div class="text-pink-400 font-semibold text-sm mb-2">
+            Select answer
+          </div>
+          
+        <!-- Options -->
+        <div class="flex flex-col gap-4 mb-8">
+          <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">01. Seoul</button>
+          <button class="w-full text-left bg-white text-black p-4 rounded-xl font-semibold border-2 border-green-400">02. Tokyo</button>
+          <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">03. Beijing</button>
+          <button class="w-full text-left bg-[#2a2a5a] hover:bg-pink-600 transition p-4 rounded-xl font-semibold">04. Bangkok</button>
+        </div>
+    
+        <!-- Buttons -->
+        <div class="flex justify-between items-center">
+          <button class="px-6 py-2 rounded-full border border-pink-500 text-pink-400 hover:bg-pink-600 hover:text-white transition" onclick="window.location.href='index.html'">Skip</button>
+          <button class="px-6 py-2 rounded-full bg-pink-500 hover:bg-pink-600 text-white font-semibold transition" onclick="window.location.href='quize1.html'">Next</button>
+        </div>
+    
+        <!-- Switch Category -->
+        <div class="mt-6 text-center">
+          <a href="#" class="text-pink-400 underline text-sm">Switch Category to Movies</a>
+        </div>
+    
+      </div>
   </div>
 
 </body>
