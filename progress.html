@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Quiz Progress</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1D084D] to-[#0F0836] p-6">
+
+  <div class="w-full max-w-md text-white">
+    <!-- Title -->
+    <h1 class="text-2xl font-bold mb-2">Daily Quiz Progress</h1>
+    <p class="text-sm text-gray-300 mb-6">In 24 hours, your progress will reset! Continue to finish!</p>
+
+    <!-- Quiz Progress -->
+    <div class="flex flex-wrap gap-4 justify-between">
+
+      <!-- Progress Item 1 -->
+      <div class="flex items-center justify-between bg-[#2D2A5F] rounded-full px-4 py-2 w-full sm:w-[48%]">
+        <span class="text-sm font-semibold">Cricket</span>
+        <div class="relative flex items-center justify-center w-16 h-16">
+          <svg class="absolute w-full h-full -rotate-90" viewBox="0 0 36 36">
+            <!-- Background Circle -->
+            <path
+              class="text-gray-300"
+              stroke="currentColor"
+              stroke-width="3"
+              fill="none"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            ></path>
+            <!-- Foreground Progress Circle -->
+            <path
+              class="text-pink-500"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"
+              stroke-dasharray="45, 100"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            ></path>
+          </svg>
+          <div class="flex flex-col items-center justify-center w-14 h-14 bg-white rounded-full">
+            <span class="text-pink-500 text-sm font-bold leading-tight">45</span>
+            <span class="text-[9px] text-gray-500 leading-none">out of 100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Item 2 -->
+      <div class="flex items-center justify-between bg-[#2D2A5F] rounded-full px-4 py-2 w-full sm:w-[48%]">
+        <span class="text-sm font-semibold">Movies</span>
+        <div class="relative flex items-center justify-center w-16 h-16">
+          <svg class="absolute w-full h-full -rotate-90" viewBox="0 0 36 36">
+            <!-- Background Circle -->
+            <path
+              class="text-gray-300"
+              stroke="currentColor"
+              stroke-width="3"
+              fill="none"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            ></path>
+            <!-- Foreground Progress Circle -->
+            <path
+              class="text-pink-500"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              fill="none"
+              stroke-dasharray="45, 100"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            ></path>
+          </svg>
+          <div class="flex flex-col items-center justify-center w-14 h-14 bg-white rounded-full">
+            <span class="text-pink-500 text-sm font-bold leading-tight">45</span>
+            <span class="text-[9px] text-gray-500 leading-none">out of 100</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
